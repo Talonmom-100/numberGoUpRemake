@@ -47,3 +47,6 @@ setInterval(update, 10)
 function minsToTime(x,y) {
   time = x * 6000 + y * 100
 }
+function addTime() {
+  time += 10000
+}
