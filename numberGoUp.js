@@ -33,7 +33,7 @@ function timeToNumber(x) {
     return "10^^" + (1.002 ** (x - 52055) + 0.00008 * x + 3.85).toFixed(2)
   }
   //10^100 < x < 10^^10^^10^^10
-  else if (x < 80120) {
+  else if (x < 85120) {
     return "10^^" + timeToNumber((x - 53690) ** 1.1)
   }
   //10^^10^^10^^10 < x
@@ -46,7 +46,4 @@ setInterval(update, 10)
 
 function minsToTime(x,y) {
   time = x * 6000 + y * 100
-}
-function addTime() {
-  time += 10000
 }
