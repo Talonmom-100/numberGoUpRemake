@@ -1,12 +1,13 @@
 time = 0
 test = 0
+timeup = 1
 
 totalTime = 80120
 console.log("Total time: " + Math.floor(totalTime / 6000) + "m " + Math.ceil((totalTime / 100) % 60) + "s")
 
 function update() {
   document.getElementById("number").innerHTML = timeToNumber(time)
-  time++
+  time += timeup
   //if (Math.floor((1.001 + time / 5e6) ** time + 0.01 * time - 1) >= 1e6 && test == 0) {test=1, console.log(time)}
 }
 
