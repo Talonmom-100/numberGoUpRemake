@@ -1,0 +1,13 @@
+body {
+  background-color: black;
+  color: white;
+  overflow: hidden;
+}
+
+p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  line-height: 100vh;
+  margin-top: 0;
+  font-size: 4vw;
+}
