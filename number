@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>Number Go Up</title>
+    <title>Number Go Up Remake</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
     <script src="numberGoUp.js" defer></script>
   </head>
