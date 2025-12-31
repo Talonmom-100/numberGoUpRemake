@@ -11,3 +11,11 @@ p {
   margin-top: 0;
   font-size: 4vw;
 }
+
+h5 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  line-height: 50vh;
+  margin-top: 3vw;
+  font-size: 2vw;
+}
