@@ -2,7 +2,7 @@ time = 0
 test = 0
 timeup = 1
 
-totalTime = 110000
+totalTime = 89000
 console.log("Total time: " + Math.floor(totalTime / 6000) + "m " + Math.ceil((totalTime / 100) % 60) + "s")
 
 function update() {
@@ -37,7 +37,7 @@ function timeToNumber(x) {
     return "10^^" + timeToNumber((x - 53690) ** 1.1)
   }
   //10^^^4 < x < 10^^^100
-  else if (x < 110000){
+  else if (x < 89000){
     return "10^^^" + (1.002 ** (x - 87500) + 0.00004 * x + 0.8).toFixed(3)
   }
   //10^^^100 < x
