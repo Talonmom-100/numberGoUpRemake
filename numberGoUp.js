@@ -2,7 +2,7 @@ time = 0
 test = 0
 timeup = 1
 
-totalTime = 89783
+totalTime = 120000
 document.getElementById("totaltime").innerHTML = "Total time: " + Math.floor(totalTime / 6000) + "m " + Math.ceil((totalTime / 100) % 60) + "s"
 
 function update() {
@@ -42,7 +42,7 @@ function timeToNumber(x) {
   }
   //10^^^100 < x < 10^^^^6
   else if (x < 120000) {
-    return timeToNumber((x - 89750) ** 1.13)
+    return "10^^^" + timeToNumber((x - 89750) ** 1.13)
   }
   else {
     return "10^^^^6"
