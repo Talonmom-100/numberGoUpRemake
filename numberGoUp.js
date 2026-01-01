@@ -8,7 +8,6 @@ document.getElementById("totaltime").innerHTML = "Total time: " + Math.floor(tot
 function update() {
   document.getElementById("number").innerHTML = timeToNumber(time)
   time += timeup
-  //if (Math.floor((1.001 + time / 5e6) ** time + 0.01 * time - 1) >= 1e6 && test == 0) {test=1, console.log(time)}
 }
 
 function timeToNumber(x) {
@@ -42,8 +41,9 @@ function timeToNumber(x) {
   }
   //10^^^100 < x < 10^^^^6
   else if (x < 120000) {
-    return "10^^^" + timeToNumber((x - 89400) ** 1.13)
+    return "10^^^" + timeToNumber((x - 89250) ** 1.13)
   }
+  //10^^^^6 < x
   else {
     return "10^^^^6"
   }
