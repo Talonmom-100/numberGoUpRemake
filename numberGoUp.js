@@ -41,7 +41,7 @@ function timeToNumber(x) {
   }
   //10^^^100 < x < 10^^^^6
   else if (x < 120000) {
-    return "10^^^" + timeToNumber((x - 88750) ** 1.13)
+    return "10^^^" + timeToNumber((x - 88725) ** 1.13)
   }
   //10^^^^6 < x
   else {
