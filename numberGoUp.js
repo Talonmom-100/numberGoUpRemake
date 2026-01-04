@@ -40,7 +40,7 @@ function timeToNumber(x) {
     return "10^^^" + (1.002 ** (x - 87500) + 0.00004 * x + 0.795).toFixed(3)
   }
   //10^^^100 < x < 10^^^^5
-  else if (x < 119522) {
+  else if (x < 119521) {
     return "10^^^" + timeToNumber((x - 88671) ** 1.13)
   }
   //10^^^^5 < x
