@@ -14,8 +14,17 @@ p {
 
 h5 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  text-align: center;
+  text-align: end;
   line-height: 50vh;
   margin-top: 0;
+  font-size: 3vw;
+  color: rgb(115, 115, 115);
+}
+h6 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: end;
+  line-height: 10vh;
+  margin-top: 0;
   font-size: 2vw;
+  color: rgb(80, 80, 80);
 }
