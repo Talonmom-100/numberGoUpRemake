@@ -49,7 +49,7 @@ function timeToNumber(x) {
   }
   //10^^^^100 < x < 10{5}5
   else if (x < 180000) {
-    return "10^^^^" + timeToNumber((x - 129300) ** 1.15)
+    return "10^^^^" + timeToNumber((x - 129290) ** 1.15)
   }
   //10{5}5 < x
   else {
