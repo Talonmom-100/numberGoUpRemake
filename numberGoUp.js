@@ -48,12 +48,12 @@ function timeToNumber(x) {
     return "10^^^^" + (1.002 ** (x - 128000) + 0.00004 * x + 0.219).toFixed(3)
   }
   //10^^^^100 < x < 10{5}5
-  else if (x < 163227) {
+  else if (x < 163228) {
     return "10^^^^" + timeToNumber((x - 129292) ** 1.15)
   }
   //10{5}5 < x < 10{5}10
   else if (x < 169000) {
-    return "10{5}" + (1.002 ** (x - 163000) + 0.00004 * x + 1).toFixed(3)
+    return "10{5}" + (1.002 ** (x - 163000) + 0.00003 * x + 1).toFixed(3)
   }
   //10{5}10 < x
   else {
