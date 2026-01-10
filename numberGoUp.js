@@ -53,7 +53,7 @@ function timeToNumber(x) {
   }
   //10{5}5 < x < 10{5}10
   else if (x < 169000) {
-    return "10{5}" + (1.002 ** (x - 166000) + 0.00003 * x + 0.8).toFixed(3)
+    return "10{5}" + (1.002 ** (x - 166000) + 0.00003 * x + 0.7301).toFixed(3)
   }
   //10{5}10 < x
   else {
