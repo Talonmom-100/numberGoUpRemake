@@ -2,10 +2,9 @@ time = 0
 test = 0
 timeup = 1
 
-totalTime = 250000
-document.getElementById("totaltime").innerHTML = "Total time: " + Math.floor(totalTime / 6000) + "m " + Math.ceil((totalTime / 100) % 60) + "s"
-
+totalTime = 196784
 function update() {
+  document.getElementById("totaltime").innerHTML = "Total time: " + Math.floor(totalTime / 6000) + "m " + Math.ceil((totalTime / 100) % 60) + "s"
   document.getElementById("number").innerHTML = timeToNumber(time)
   time += timeup
 }
@@ -17,11 +16,11 @@ function timeToNumber(x) {
   }
   //1e15 < x < 1e100
   else if (x < 13166) {
-    return "10<sup>" + ((1 + x / 7e6) ** (x - 10803) + 0.0006 * x + 7.3).toFixed(1)
+    return "10<sup>" + ((1 + x / 7e6) ** (x - 10803) + 0.0006 * x + 7.3).toFixed(1) + "</sup>"
   }
   //1e100 < x < 1e1e6
   else if (x < 16627) {
-    return "10<sup>" + (Math.floor((1 + x / 7e6) ** (x - 10803) + 0.0006 * x + 7.3)).toLocaleString()
+    return "10<sup>" + (Math.floor((1 + x / 7e6) ** (x - 10803) + 0.0006 * x + 7.3)).toLocaleString() + "</sup>"
   }
   //1e1e6 < x < 10^^9
   else if (x < 52011) {
@@ -55,13 +54,13 @@ function timeToNumber(x) {
   else if (x < 166796) {
     return "10{5}" + (1.002 ** (x - 166000) + 0.00003 * x + 0.099).toFixed(3)
   }
-  //10{5}10 < x < 10{{1}}10
-  else if (x < 250000) {
+  //10{5}10 < x < 10{{1}}4
+  else if (x < 196785) {
     return "10{" + timeToNumber((x - 166600) ** 1.18) + "}10"
   }
-  //10{{1}}10 < x
+  //10{{1}}4 < x
   else {
-    return "10{{1}}10"
+    return "10{{1}}4"
   }
 }
 
