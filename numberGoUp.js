@@ -24,7 +24,7 @@ function timeToNumber(x) {
   }
   //1e1e6 < x < 10^^9
   else if (x < 52011) {
-    return "10<sup>" + timeToNumber(x * 1.2 - 13769)
+    return "10<sup>" + timeToNumber(x * 1.2 - 13769) + "</sup>"
   }
   //10^^9 < x < 10^^100
   else if (x < 55512) {
