@@ -4,7 +4,7 @@ body {
   overflow: hidden;
 }
 
-p {
+#number {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
   line-height: 100vh;
@@ -12,7 +12,7 @@ p {
   font-size: 4vw;
 }
 
-h5 {
+#totaltime {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   line-height: 50vh;
   margin-top: 0;
@@ -20,7 +20,7 @@ h5 {
   color: rgb(115, 115, 115);
 }
 
-h6 {
+#note {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   line-height: 10vh;
   margin-top: 0;
