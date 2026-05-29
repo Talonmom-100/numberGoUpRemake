@@ -32,8 +32,10 @@ table {
 }
 
 td {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   border-radius: 0.5rem;
   border: 0.25rem solid white;
+  text-align: center;
   height: 9rem;
   width: 12rem;
 }
