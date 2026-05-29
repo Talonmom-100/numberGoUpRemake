@@ -60,7 +60,7 @@ function timeToNumber(x) {
   }
   //10{{1}}4 < x < 10{{1}}100
   else if (x < 197271) {
-    return "10{{1}}" + (1.002 ** (x - 195000) + 0.00003 * x + 0.7).toFixed(3)
+    return "10{{1}}" + (1.002 ** (x - 196000) + 0.00003 * x + 0.7).toFixed(3)
   }
   //10{{1}}100 < x
   else {
@@ -80,4 +80,23 @@ function skipTicks(x) {
 
 function goBackTicks(x) {
   time -= x
+  if (time < 0) {
+    time = 0
+  }
+}
+
+function speedUp(x) {
+  timeup += x
+}
+
+function speedUpMult(x) {
+  timeup *= x
+}
+
+function slowDown(x) {
+  timeup -= x
+}
+
+function slowDownDivide(x) {
+  timeup /= x
 }
