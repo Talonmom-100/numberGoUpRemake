@@ -6,14 +6,14 @@ body {
 p#number {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
-  line-height: 100vh;
+  line-height: 10vh;
   margin-top: 0;
   font-size: 4vw;
 }
 
 p#totaltime {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  line-height: 50vh;
+  line-height: 5vh;
   margin-top: 0;
   font-size: 3vw;
   color: rgb(115, 115, 115);
@@ -21,7 +21,7 @@ p#totaltime {
 
 p#note {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  line-height: 10vh;
+  line-height: 1vh;
   margin-top: 0;
   font-size: 2vw;
   color: rgb(80, 80, 80);
