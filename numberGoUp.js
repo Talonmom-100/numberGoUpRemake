@@ -2,7 +2,7 @@ time = 0
 test = 0
 timeup = 1
 
-totalTime = 200000
+totalTime = 197271
 function update() {
   document.getElementById("totaltime").innerHTML = "Total time: " + Math.floor(totalTime / 6000) + "m " + Math.ceil((totalTime / 100) % 60) + "s"
   document.getElementById("number").innerHTML = timeToNumber(time)
@@ -76,4 +76,8 @@ function minsToTime(x,y) {
 
 function skipTicks(x) {
   time += x
+}
+
+function goBackTicks(x) {
+  time -= x
 }

@@ -31,11 +31,52 @@ table {
   border-spacing: 0.5rem;
 }
 
-td {
+td#skip {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   border-radius: 0.5rem;
-  border: 0.25rem solid white;
+  border: 0.25rem solid rgb(255, 0, 0);
+  color: rgb(255, 0, 0);
   text-align: center;
-  height: 9rem;
-  width: 12rem;
+  height: 6rem;
+  width: 9rem;
+}
+
+td#goback {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-radius: 0.5rem;
+  border: 0.25rem solid rgb(255, 125, 0);
+  color: rgb(255, 125, 0);
+  text-align: center;
+  height: 6rem;
+  width: 9rem;
+}
+
+td#speedup {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-radius: 0.5rem;
+  border: 0.25rem solid rgb(255, 255, 0);
+  color: rgb(255, 255, 0);
+  text-align: center;
+  height: 6rem;
+  width: 9rem;
+}
+
+td#slowdown {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-radius: 0.5rem;
+  border: 0.25rem solid rgb(0, 255, 0);
+  color: rgb(0, 255, 0);
+  text-align: center;
+  height: 6rem;
+  width: 9rem;
+}
+
+td#other {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-radius: 0.5rem;
+  border: 0.25rem solid rgb(0, 255, 255);
+  color: rgb(0, 255, 255);
+  text-align: center;
+  height: 6rem;
+  width: 9rem;
 }
