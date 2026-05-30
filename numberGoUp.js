@@ -140,19 +140,26 @@ function goToEnd() {
 function secret(x) {
   if (x = "ehehe") {
     console.log("You found the Jacorb Secret!")
-  } else if (x = "Space Invaders") {
+  } 
+  else if (x = "Space Invaders") {
     console.log("You found the Geometry Dash Secret!")
-  } else if (x = "wtar") {
+  } 
+  else if (x = "wtar") {
     console.log("You found the Silly Caverns Secret!")
-  } else if (x = "Living the Dream") {
+  } 
+  else if (x = "Living the Dream") {
     console.log("You found the Tomodachi Life: Living the Dream Secret!")
-  } else if (x = "Get a life :(") {
+  } 
+  else if (x = "Get a life :(") {
     console.log("You found the Tree of Life(the incremental game) Secret!")
-  } else if (x = "WE ALL HATE GOOGLE.") {
+  } 
+  else if (x = "WE ALL HATE GOOGLE.") {
     console.log("You found a me(?!) Secret!")
-  } else if (x = "tutorial") {
+  } 
+  else if (x = "tutorial") {
     console.log("Great! Now, find which string is a secret: 'pogger', 'ehehe', 'k you can go now', 'Notebook?!', 'Player, I remember you're variables.'")
-  } else {
+  } 
+  else {
     console.log("Invalid secret.")
   }
 }
