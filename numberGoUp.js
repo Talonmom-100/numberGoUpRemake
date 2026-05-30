@@ -130,10 +130,12 @@ function slowDownDivide(x) {
 function goToStage(x) {
   if (x = 1) {
     time = 0
-  } else if (x = 6) {
+  }
+  if (x = 6) {
     time = totalTime
-  } else {
-    console.log("Not valid.")
+  }
+  if (x != 1 && x != 6) {
+    console.log("Invalid stage number.")
   }
 }
 
