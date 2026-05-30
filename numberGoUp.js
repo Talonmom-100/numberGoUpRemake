@@ -129,7 +129,7 @@ function slowDownDivide(x) {
 
 function goToStage(x) {
   if (x = 0) {
-    time = 0
+    time -= time
   } else if (x = 5) {
     time = totalTime
   } else {
