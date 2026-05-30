@@ -27,6 +27,23 @@ p#note {
   color: rgb(80, 80, 80);
 }
 
+p#timedisplay {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  line-height: 1vh;
+  margin-top: 0;
+  font-size: 2vw;
+}
+
+p#timeupdisplay {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  line-height: 1vh;
+  margin-top: 0;
+  font-size: 2vw;
+  color: rgb(150, 150, 150)
+}
+
 table {
   border-spacing: 0.5rem;
 }
