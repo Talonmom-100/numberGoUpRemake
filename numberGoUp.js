@@ -2,8 +2,6 @@ time = 0
 test = 0
 timeup = 1
 
-console.log("Welcome to the console! This is where the secrets live. If you want to find secrets, you must do the following function: 'secret([text goes here])' For example, try typing 'secret('tutorial')'!")
-
 totalTime = 200000
 function update() {
   document.getElementById("totaltime").innerHTML = "Total time: " + Math.floor(totalTime / 6000) + "m " + Math.ceil((totalTime / 100) % 60) + "s"
@@ -135,31 +133,4 @@ function goToStart() {
 
 function goToEnd() {
   time = totalTime
-}
-
-function secret(x) {
-  if (x = "ehehe") {
-    console.log("You found the Jacorb Secret!")
-  } 
-  else if (x = "Space Invaders") {
-    console.log("You found the Geometry Dash Secret!")
-  } 
-  else if (x = "wtar") {
-    console.log("You found the Silly Caverns Secret!")
-  } 
-  else if (x = "Living the Dream") {
-    console.log("You found the Tomodachi Life: Living the Dream Secret!")
-  } 
-  else if (x = "Get a life :(") {
-    console.log("You found the Tree of Life(the incremental game) Secret!")
-  } 
-  else if (x = "WE ALL HATE GOOGLE.") {
-    console.log("You found a me(?!) Secret!")
-  } 
-  else if (x = "tutorial") {
-    console.log("Great! Now, find which string is a secret: 'pogger', 'ehehe', 'k you can go now', 'Notebook?!', 'Player, I remember you're variables.'")
-  } 
-  else {
-    console.log("Invalid secret.")
-  }
 }
