@@ -85,7 +85,7 @@ function timeToNumber(x) {
   //10{{1}}4 < x < 10{{1}}100
   //Stage 5
   else if (x < 200000) {
-    return "10{{1}}" + (1.002 ** (x - 196500) + 0.00003 * x + 0.3).toFixed(3)
+    return "10{{1}}" + (1.002 ** (x - 196700) + 0.00003 * x + 0.3).toFixed(3)
   }
   //10{{1}}100 < x
   //Stage 6
