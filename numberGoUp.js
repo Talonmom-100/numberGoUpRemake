@@ -95,7 +95,7 @@ function timeToNumber(x) {
   }
 }
 
-function timeToStage() {
+function timeToStage(x) {
   if (x < 10888) {
     return 1
   }
