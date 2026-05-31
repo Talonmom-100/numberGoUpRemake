@@ -7,7 +7,8 @@ function update() {
   document.getElementById("totaltime").innerHTML = "Total time: " + Math.floor(totalTime / 6000) + "m " + Math.ceil((totalTime / 100) % 60) + "s"
   document.getElementById("number").innerHTML = timeToNumber(time)
   document.getElementById("timedisplay").innerHTML = "Ticks: " + time
-  document.getElementById("timeupdisplay").innerHTML = "Ticks per second: " + timeup
+  document.getElementById("timeupdisplay").innerHTML = "Ticks per update: " + timeup
+  document.getElementById("stagedisplay").innerHTML = "Stage " + timeToStage(time)
   time += timeup
 }
 
@@ -85,12 +86,33 @@ function timeToNumber(x) {
   //10{{1}}4 < x < 10{{1}}100
   //Stage 5
   else if (x < 200000) {
-    return "10{{1}}" + (1.002 ** (x - 196700) + 0.00003 * x + 0.3).toFixed(3)
+    return "10{{1}}" + (1.002 ** (x - 197000) + 0.00003 * x + 0.3).toFixed(3)
   }
   //10{{1}}100 < x
   //Stage 6
   else {
     return "10{{1}}100"
+  }
+}
+
+function timeToStage() {
+  if (x < 10888) {
+    return 1
+  }
+  else if (x < 52011) {
+    return 2
+  }
+  else if (x < 80120) {
+    return 3
+  }
+  else if (x < 196785) {
+    return 4
+  }
+  else if (x < 200000) {
+    return 5
+  }
+  else {
+    return 6
   }
 }
 
