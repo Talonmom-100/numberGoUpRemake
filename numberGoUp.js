@@ -2,7 +2,7 @@ time = 0
 test = 0
 timeup = 1
 
-totalTime = 200000
+totalTime = 220000
 function update() {
   document.getElementById("totaltime").innerHTML = "Total time: " + Math.floor(totalTime / 6000) + "m " + Math.ceil((totalTime / 100) % 60) + "s"
   document.getElementById("number").innerHTML = timeToNumber(time)
@@ -85,7 +85,7 @@ function timeToNumber(x) {
   }
   //10{{1}}4 < x < 10{{1}}100
   //Stage 5
-  else if (x < 200000) {
+  else if (x < 220000) {
     return "10{{1}}" + (1.002 ** (x - 210000) + 0.00002 * x + 0.064).toFixed(3)
   }
   //10{{1}}100 < x
@@ -108,7 +108,7 @@ function timeToStage(x) {
   else if (x < 196785) {
     return 4
   }
-  else if (x < 200000) {
+  else if (x < 220000) {
     return 5
   }
   else {
