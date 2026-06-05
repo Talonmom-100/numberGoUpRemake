@@ -85,13 +85,18 @@ function timeToNumber(x) {
   }
   //10{{1}}4 < x < 10{{1}}100
   //Stage 5
-  else if (x < 220000) {
+  else if (x < 212283) {
     return "10{{1}}" + (1.002 ** (x - 210000) + 0.00002 * x + 0.064).toFixed(3)
   }
-  //10{{1}}100 < x
+  //10{{1}}100 < x < 10{{2}}5
+  //Stage 5
+  else if (x < 260000) {
+    return "10{{1}}" + timeToNumber((x - 210000) ** 1.18)
+  }
+  //10{{2}}5 < x
   //Stage 6
   else {
-    return "10{{1}}100"
+    return "10{{2}}5"
   }
 }
 
@@ -108,7 +113,7 @@ function timeToStage(x) {
   else if (x < 196785) {
     return 4
   }
-  else if (x < 220000) {
+  else if (x < 260000) {
     return 5
   }
   else {
