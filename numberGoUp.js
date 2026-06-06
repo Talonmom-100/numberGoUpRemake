@@ -91,7 +91,7 @@ function timeToNumber(x) {
   //10{{1}}100 < x < 10{{2}}5
   //Stage 5
   else if (x < 247108) {
-    return "10{{1}}" + timeToNumber((x - 211480) ** 1.18)
+    return "10{{1}}" + timeToNumber((x - 211475) ** 1.18)
   }
   //10{{2}}5 < x
   //Stage 6
